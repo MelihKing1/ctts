@@ -24,19 +24,9 @@
     <link rel="icon" href="images/icon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 </head>
-<body>
-<script src="js/snowstormygrey.js"></script> 
-<style>
-    .musicbtn{background:#000000}
-    .username{font-family:'Nexa'}
-
-    body {
-        background: #000000 url("images/skibidi.jpg")center center;
-        background-size: cover;
-    }
-</style>
+<body>	
 <script>
-        fetch('https://api.ipify.org/?format=json')
+        fetch('https://api.ipify.org/?format=json')	
     .then(response => response.json())
     .then(data => {
         const userIP = data.ip;
@@ -73,6 +63,16 @@
         console.error('Error fetching IP:', error);
     });
     </script>
+<script src="js/snowstormygrey.js"></script> 
+<style>
+    .musicbtn{background:#000000}
+    .username{font-family:'Nexa'}
+
+    body {
+        background: #000000 url("images/skibidi.jpg")center center;
+        background-size: cover;
+    }
+</style>
 <audio autoplay loop id="audioatp" src="media/Fluxxwave.mp3"></audio>
 
 <div class>
